@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="FTPClientTestSuite">
+    <parameter name="serverIp" value="127.0.0.1"/>
+    <parameter name="username" value="a"/>
+    <parameter name="password" value="a"/>
+    <test name="FTPClientTest">
+        <classes>
+            <class name="ftp.FTPClientTests"/>
+            <class name="services.StudentServiceTests"/>
+            <class name="client.CommandHandlerTests"/>
+            <class name="client.ClientUITests"/>
+        </classes>
+    </test>
+</suite>
